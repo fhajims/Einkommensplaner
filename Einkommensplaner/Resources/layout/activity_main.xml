@@ -108,6 +108,7 @@
         />
       
             <RelativeLayout
+                android:visibility="invisible"
                 android:id="@+id/resultLayout"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"

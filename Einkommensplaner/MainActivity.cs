@@ -69,6 +69,8 @@ namespace Einkommensplaner
             annualSavingsTextView.Text = annualSavings.ToString() + "Euro";
             spendableIncomeTextView.Text = spendableIncome.ToString() + "Euro";
 
+            resultLayout.Visibility = Android.Views.ViewStates.Visible;
+
         }
 
         protected override void OnCreate(Bundle savedInstanceState)
