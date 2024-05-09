@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Widget;
 using AndroidX.AppCompat.App;
+using Java.Interop;
 
 namespace Einkommensplaner
 {
@@ -52,11 +53,21 @@ namespace Einkommensplaner
             double taxRate = double.Parse(taxRateEditText.Text);
             double savingsRate = double.Parse(savingRateEditText.Text);
 
+            //jährliches Einkommen, Steuern und Erspranisse berechnen
+
             double annualWorkHourSummary = workHoursPerDay * 5 * 50;
             double annualIncome = incomePerHour * workHoursPerDay * 5 * 50;
             double taxPayable = (taxRate / 100) * annualIncome;
+            double annualSavings = (savingsRate / 100) * annualIncome;
+            double spendableIncome = annualIncome - annualSavings - taxPayable;
 
+            // Resulate Display
 
+            grossIncomeTextView.Text = annualIncome.ToString();
+            workSummaryTextView.Text = annualWorkHourSummary.ToString() + "Stunden";
+            taxPayableTextView.Text = taxPayable.ToString() + "Euro";
+            annualSavingsTextView.Text = annualSavings.ToString() + "Euro";
+            spendableIncomeTextView.Text = spendableIncome.ToString() + "Euro";
 
         }
 
