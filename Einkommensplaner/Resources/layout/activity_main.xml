@@ -117,12 +117,12 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="30dp">
 
-                <!-- Jaehrliche Arbeitsübersicht -->
+                <!-- Jaehrliche Arbeitsstundenübersicht -->
 
                 <TextView
                     android:id="@+id/workSummaryTitle"
                     android:layout_alignParentLeft="true"
-                    android:text="Jaehrliche Arbeitsübersicht"
+                    android:text="Jaehrliche Arbeitsstundenübersicht"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 

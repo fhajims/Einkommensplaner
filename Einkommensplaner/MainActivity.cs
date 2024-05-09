@@ -63,11 +63,11 @@ namespace Einkommensplaner
 
             // Resulate Display
 
-            grossIncomeTextView.Text = annualIncome.ToString();
-            workSummaryTextView.Text = annualWorkHourSummary.ToString() + "Stunden";
-            taxPayableTextView.Text = taxPayable.ToString() + "Euro";
-            annualSavingsTextView.Text = annualSavings.ToString() + "Euro";
-            spendableIncomeTextView.Text = spendableIncome.ToString() + "Euro";
+            grossIncomeTextView.Text = annualIncome.ToString()  + " Euro";
+            workSummaryTextView.Text = annualWorkHourSummary.ToString() + " Stunden";
+            taxPayableTextView.Text = taxPayable.ToString() + " Euro";
+            annualSavingsTextView.Text = annualSavings.ToString() + " Euro";
+            spendableIncomeTextView.Text = spendableIncome.ToString() + " Euro";
 
             resultLayout.Visibility = Android.Views.ViewStates.Visible;
 
